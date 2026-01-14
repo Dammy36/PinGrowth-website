@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  transform: translateX(-18px);
+}
+.reveal-right {
+  transform: translateX(18px);
+}
+.reveal-left.show,
+.reveal-right.show {
+  transform: translateX(0);
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.floaty {
+  animation: floaty 4s ease-in-out infinite;
+}
+
+/* Button hover pop */
+.pop:hover {
+  transform: translateY(-2px);
+}
+.pop {
+  transition: transform 250ms ease;
+}
