@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PinGrowth Digital</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="I help entrepreneurs and growing businesses simplify their operations with AI, automation, digital systems, and practical technology solutions."
+    />
+    <title>Dammy Oseyemi | AI-Powered Digital Operations Specialist</title>
+    <link rel="stylesheet" href="tailwind.css" />
     <meta name="p:domain_verify" content="58245eca0686acbbecb55fd3ad12e34c" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,9 +19,9 @@
       <div
         class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
       >
-        <a href="#" class="text-lg font-extrabold tracking-wide">
-          <span class="text-white">PinGrowth</span
-          ><span class="text-pink-400">Digital</span>
+        <a href="#" class="text-base sm:text-lg font-extrabold tracking-wide">
+          <span class="text-white">AI • AUTOMATION</span
+          ><span class="text-pink-400"> • DIGITAL SYSTEMS</span>
         </a>
 
         <nav
@@ -25,26 +29,90 @@
         >
           <a href="#about" class="hover:text-pink-300">ABOUT</a>
           <a href="#services" class="hover:text-pink-300">SERVICES</a>
+          <a href="#portfolio" class="hover:text-pink-300">PORTFOLIO</a>
+          <a href="#process" class="hover:text-pink-300">PROCESS</a>
           <a href="#faqs" class="hover:text-pink-300">FAQs</a>
-          <a href="#pricing" class="hover:text-pink-300">PRICING</a>
-          <a href="#testimonial" class="hover:text-pink-300">TESTIMONIAL</a>
           <a href="#contact" class="hover:text-pink-300">CONTACT</a>
         </nav>
 
+        <div class="flex items-center gap-3">
+          <a
+            href="#contact"
+            class="hidden sm:inline-flex rounded-full bg-pink-500 px-4 py-2 text-sm font-bold hover:bg-pink-600 pop"
+          >
+            WORK WITH ME
+          </a>
+
+          <button
+            id="menuBtn"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="grid h-10 w-10 place-items-center rounded-md border border-white/20 text-white md:hidden"
+          >
+            <span class="sr-only">Menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <nav
+        id="mobileMenu"
+        class="mobile-menu flex-col gap-1 border-t border-white/10 bg-black px-5 py-4 text-sm font-semibold tracking-wide text-gray-200 md:hidden"
+      >
+        <a
+          href="#about"
+          class="rounded-md px-3 py-3 hover:bg-white/5 hover:text-pink-300"
+          >ABOUT</a
+        >
+        <a
+          href="#services"
+          class="rounded-md px-3 py-3 hover:bg-white/5 hover:text-pink-300"
+          >SERVICES</a
+        >
+        <a
+          href="#portfolio"
+          class="rounded-md px-3 py-3 hover:bg-white/5 hover:text-pink-300"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#process"
+          class="rounded-md px-3 py-3 hover:bg-white/5 hover:text-pink-300"
+          >PROCESS</a
+        >
+        <a
+          href="#faqs"
+          class="rounded-md px-3 py-3 hover:bg-white/5 hover:text-pink-300"
+          >FAQs</a
+        >
         <a
           href="#contact"
-          class="rounded-full bg-pink-500 px-4 py-2 text-sm font-bold hover:bg-pink-600 pop"
+          class="mt-2 rounded-full bg-pink-500 px-4 py-3 text-center font-bold text-white hover:bg-pink-600"
         >
-          GET STARTED
+          WORK WITH ME
         </a>
-      </div>
+      </nav>
     </header>
 
+    <!-- HERO -->
     <section class="bg-black">
       <div
         class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-16"
       >
-        <!--Hero section-->
         <div class="relative mx-auto w-full max-w-md reveal reveal-left">
           <div
             class="absolute left-6 top-10 floaty h-60 w-40 -rotate-12 rounded-[2rem] border border-white/20 bg-zinc-900 shadow-2xl md:h-72 md:w-48"
@@ -60,9 +128,8 @@
             class="relative ml-16 overflow-hidden rounded-3xl border border-white/15 bg-zinc-900 shadow-2xl"
           >
             <img
-              src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/original/Dammy-img1.jpg?1768945708"
-              alt="PinGrowth Digital Hero"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/original/Dammy-img1.jpg?1768945708"
+              alt="Dammy Oseyemi, AI-Powered Digital Operations Specialist"
               class="h-[380px] w-full object-cover md:h-[440px]"
             />
             <div
@@ -72,52 +139,57 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/origina
             <div
               class="absolute bottom-5 left-5 rounded-full bg-pink-500/90 px-4 py-2 text-xs font-bold tracking-wide"
             >
-              PIN GROWTH DIGITAL
+              DAMMY OSEYEMI
             </div>
           </div>
         </div>
 
         <div class="text-center md:text-left reveal reveal-right">
-          <p class="text-xs font-semibold tracking-[0.35em] text-gray-300">
-            STRATEGIC
+          <p class="mt-6 text-sm text-gray-300">
+            AI-Powered Digital Operations Specialist
           </p>
-
           <h1
-            class="mt-3 text-4xl font-extrabold leading-tight text-pink-200 md:text-5xl"
+            class="mt-3 text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl"
           >
-            Pinterest<br />
-            MANAGEMENT
+            Helping Businesses Work Smarter with
+            <span class="text-pink-400">AI &amp; Automation</span>
           </h1>
 
-          <p class="mt-5 max-w-xl text-base text-gray-200">
-            Pinterest Manager for brands ready to grow beyond social media. I
-            help businesses turn Pinterest into a long-term traffic and sales
-            engine using strategy, SEO, and high-converting Pins.
+          <p
+            class="mt-5 text-sm font-semibold tracking-wide text-gray-300 sm:text-base"
+          >
+            AI Automation • Digital Operations • Content Systems • Websites
           </p>
 
-          <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <p class="mt-4 max-w-xl text-base text-gray-200 mx-auto md:mx-0">
+            I help entrepreneurs, coaches, consultants, women-led businesses,
+            and growing online businesses simplify repetitive tasks and improve
+            their digital operations using AI, automation, content systems, and
+            practical digital solutions.
+          </p>
+
+          <div
+            class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center md:justify-start"
+          >
             <a
-              href="#services"
+              href="#contact"
               class="inline-flex items-center justify-center rounded-md bg-pink-500 px-8 py-3 text-sm font-bold tracking-wide text-white shadow-lg hover:bg-pink-600 pop"
             >
-              GET STARTED
+              WORK WITH ME
             </a>
 
             <a
-              href="#pricing"
+              href="#portfolio"
               class="inline-flex items-center justify-center rounded-md border border-white/30 px-8 py-3 text-sm font-bold tracking-wide text-white hover:border-pink-300 hover:text-pink-200 pop"
             >
-              SEE PACKAGES
+              VIEW MY WORK
             </a>
           </div>
-
-          <p class="mt-6 text-sm text-gray-300">
-            Beginner-friendly. Results-focused. Designed for real growth.
-          </p>
         </div>
       </div>
     </section>
 
+    <!-- QUICK LINKS -->
     <section class="bg-pink-200 text-black">
       <div class="mx-auto max-w-6xl px-5 py-8">
         <div class="grid grid-cols-3 gap-5 md:grid-cols-6 reveal">
@@ -139,22 +211,22 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/origina
             <p class="mt-2 text-xs font-semibold tracking-wide">SERVICES</p>
           </a>
 
-          <a href="#pricing" class="group text-center">
+          <a href="#portfolio" class="group text-center">
             <div
               class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-md group-hover:bg-zinc-800"
             >
-              $
+              ▣
             </div>
-            <p class="mt-2 text-xs font-semibold tracking-wide">PRICING</p>
+            <p class="mt-2 text-xs font-semibold tracking-wide">PORTFOLIO</p>
           </a>
 
-          <a href="#tips" class="group text-center">
+          <a href="#process" class="group text-center">
             <div
               class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-md group-hover:bg-zinc-800"
             >
               ✦
             </div>
-            <p class="mt-2 text-xs font-semibold tracking-wide">SOCIAL</p>
+            <p class="mt-2 text-xs font-semibold tracking-wide">PROCESS</p>
           </a>
 
           <a href="#contact" class="group text-center">
@@ -166,39 +238,45 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/origina
             <p class="mt-2 text-xs font-semibold tracking-wide">CONTACT</p>
           </a>
 
-          <a href="#services" class="group text-center">
+          <a href="#faqs" class="group text-center">
             <div
               class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-md group-hover:bg-zinc-800"
             >
               ✓
             </div>
-            <p class="mt-2 text-xs font-semibold tracking-wide">START</p>
+            <p class="mt-2 text-xs font-semibold tracking-wide">FAQ</p>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="bg-pink-100 text-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
         <div
-          class="mx-auto max-w-4xl rounded-3xl border border-black/10 bg-white/80 p-8 shadow-xl md:p-10 reveal"
+          class="mx-auto max-w-4xl rounded-3xl border border-black/10 bg-white/80 p-6 shadow-xl sm:p-8 md:p-10 reveal"
         >
           <div class="text-center">
-            <h2 class="text-3xl font-extrabold tracking-wide">ABOUT US</h2>
+            <h2 class="text-3xl font-extrabold tracking-wide">ABOUT ME</h2>
             <p
               class="mt-2 text-xs font-semibold tracking-[0.25em] text-black/60"
             >
-              YOUR PARTNER IN SOCIAL MEDIA SUCCESS
+              Business Background Meets AI &amp; Automation
             </p>
           </div>
 
           <p
             class="mx-auto mt-6 max-w-2xl text-center text-sm leading-relaxed text-black/70"
           >
-            PinGrowth Digital helps beginners and small brands grow on Pinterest
-            through strategic Pinterest marketing, keyword-optimized content,
-            and simple growth systems designed to increase visibility, traffic,
-            and long-term results.
+            I have a background in business and customer experience, and I built
+            my own service-based business from the ground up. Along the way, I
+            picked up website development, content, and digital marketing skills
+            to support that business, and that's what led me into AI and
+            automation. I like finding the repetitive, manual parts of running a
+            business and figuring out how AI and automation can take them off
+            your plate. I combine hands-on business understanding with practical
+            technical skills, so the systems I build actually fit how a business
+            really runs.
           </p>
 
           <div
@@ -208,9 +286,8 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/533/origina
               class="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-pink-300 shadow-md reveal reveal-left"
             >
               <img
-                src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/original/dami-image2.jpg?1768946106"
-                alt="Meet the Manager"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/original/dami-image2.jpg?1768946106"
+                alt="Dammy Oseyemi, business owner and digital operations specialist"
                 class="h-full w-full object-cover"
               />
             </div>
@@ -219,15 +296,15 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/origina
               <p
                 class="inline-block rounded-full bg-pink-200 px-4 py-1 text-xs font-bold tracking-wide"
               >
-                MEET THE MANAGER
+                Hi, I'm Dammy
               </p>
 
-              <h3 class="mt-3 text-xl font-extrabold tracking-wide">DAMMY</h3>
               <p class="mt-2 text-sm text-black/70">
-                I help you grow on Pinterest with clear strategies, searchable
-                content ideas, and step-by-step tips that make pinning feel
-                simple. If you’ve been stuck, overwhelmed, or inconsistent —
-                you’re in the right place.
+                Today, I help business owners use AI, automation, and digital
+                systems to simplify their operations, cut down on repetitive
+                work, and build a stronger digital presence. My goal is always
+                the same: practical solutions that are easy to use and actually
+                fit the way you already work.
               </p>
             </div>
           </div>
@@ -237,98 +314,511 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/origina
 
     <!-- SERVICES -->
     <section id="services" class="bg-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
         <div class="text-center reveal">
-          <h2 class="text-4xl font-extrabold tracking-wide text-pink-200">
-            SERVICES LIST
+          <h2
+            class="text-3xl font-extrabold tracking-wide text-pink-200 sm:text-4xl"
+          >
+            WHAT I DO
           </h2>
           <p class="mt-2 text-xs font-semibold tracking-[0.25em] text-gray-300">
-            Are you looking to book more clients and sell your products through
-            Pinterest but don't have the time to manage another marketing
-            channel?
-            <em>That's where I come in and here is what I help you with!</em>
+            Practical AI, automation, and digital support for growing businesses
           </p>
         </div>
 
-        <div class="mt-10 grid gap-4 md:grid-cols-3">
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-left">
-            <p class="font-bold text-pink-200">Pinterest Strategy</p>
+            <p class="font-bold text-pink-200">AI &amp; Workflow Automation</p>
             <p class="mt-2 text-sm text-gray-300">
-              A clear, customized plan for what to post, how to position your
-              content, and how to grow consistently on Pinterest without
-              guessing.
+              Automating repetitive business processes, connecting tools and
+              workflows, n8n automation, and AI-powered workflows.
             </p>
           </div>
 
           <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal">
-            <p class="font-bold text-pink-200">Pinterest Content Creation</p>
+            <p class="font-bold text-pink-200">AI Assistants &amp; Chatbots</p>
             <p class="mt-2 text-sm text-gray-300">
-              Complete profile setup including bio, boards, and keyword-focused
-              structure designed to attract the right audience and improve
-              visibility.
-            </p>
-          </div>
-
-          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right">
-            <p class="font-bold text-pink-200">Pinterest Landing Page Setup</p>
-            <p class="mt-2 text-sm text-gray-300">
-              Simple, conversion-focused landing pages built to turn Pinterest
-              traffic into clicks, leads, and real results.
+              AI-powered website assistants, customer FAQ systems, business
+              information assistants, and AI agents.
             </p>
           </div>
 
           <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right">
             <p class="font-bold text-pink-200">
-              Pinterest Account Optimization
+              Digital Operations &amp; Business Systems
             </p>
             <p class="mt-2 text-sm text-gray-300">
-              profile setup, bio, boards, and keyword SEO that converts.
+              Streamlining digital processes, organizing business information,
+              connecting business tools, and improving repetitive workflows.
             </p>
           </div>
 
           <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-left">
-            <p class="font-bold text-pink-200">Pinterest SEO +Traffic Growth</p>
+            <p class="font-bold text-pink-200">Content &amp; Digital Systems</p>
             <p class="mt-2 text-sm text-gray-300">
-              In-depth keyword research and Pin optimization to help your
-              content rank, get discovered, and drive consistent traffic over
-              time.
+              AI-assisted content workflows, content planning, social media
+              support, and digital marketing systems.
             </p>
           </div>
 
-          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal">
-            <p class="font-bold text-pink-200">
-              Pinterest Analytics and Reporting
-            </p>
+          <div
+            class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right sm:col-span-2 lg:col-span-1"
+          >
+            <p class="font-bold text-pink-200">Websites &amp; Landing Pages</p>
             <p class="mt-2 text-sm text-gray-300">
-              Clear insights into what’s working, what’s not, and what to adjust
-              so your growth stays intentional and data-driven.
-            </p>
-          </div>
-
-          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right">
-            <p class="font-bold text-pink-200">Pinterest Coaching</p>
-            <p class="mt-2 text-sm text-gray-300">
-              One-on-one guidance to help you stay consistent, understand
-              Pinterest better, and confidently grow your account at your own
-              pace.
+              Responsive landing pages, business websites, and frontend
+              development with HTML, CSS, and JavaScript.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="bg-pink-100 text-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div class="text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-wide sm:text-4xl">
+            MY WORK
+          </h2>
+          <p class="mt-2 text-sm text-black/70">
+            A few of the projects I've built
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          <div
+            class="rounded-2xl border border-black/10 bg-black p-7 text-white shadow-xl reveal reveal-left"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              PROJECT 01
+            </p>
+            <p class="mt-3 text-lg font-extrabold">
+              AI-Powered Business Assistant
+            </p>
+            <p class="mt-3 text-sm text-gray-300">
+              An AI-powered chatbot/assistant built for a business website to
+              answer customer questions using the business's own information.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-pink-300 hover:text-pink-200"
+            >
+              View Project →
+            </a>
+          </div>
+
+          <div
+            class="rounded-2xl border border-black/10 bg-black p-7 text-white shadow-xl reveal reveal-right"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              PROJECT 02
+            </p>
+            <p class="mt-3 text-lg font-extrabold">
+              AI Agent Business Automation
+            </p>
+            <p class="mt-3 text-sm text-gray-300">
+              An n8n AI Agent workflow connecting AI with tools such as Google
+              Sheets, Google Calendar, and Google Drive to automate repetitive
+              tasks.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-pink-300 hover:text-pink-200"
+            >
+              View Project →
+            </a>
+          </div>
+
+          <div
+            class="rounded-2xl border border-black/10 bg-black p-7 text-white shadow-xl reveal reveal-left"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              PROJECT 03
+            </p>
+            <p class="mt-3 text-lg font-extrabold">Automated Email Workflow</p>
+            <p class="mt-3 text-sm text-gray-300">
+              An n8n workflow that processes incoming Gmail messages, routes
+              information based on conditions, and triggers automated follow-up
+              actions.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-pink-300 hover:text-pink-200"
+            >
+              View Project →
+            </a>
+          </div>
+
+          <div
+            class="rounded-2xl border border-black/10 bg-black p-7 text-white shadow-xl reveal reveal-right"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              PROJECT 04
+            </p>
+            <p class="mt-3 text-lg font-extrabold">
+              Responsive Business Websites &amp; Landing Pages
+            </p>
+            <p class="mt-3 text-sm text-gray-300">
+              Responsive websites and landing pages built using HTML, CSS,
+              JavaScript, and modern web tools.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-pink-300 hover:text-pink-200"
+            >
+              View Project →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section id="workflow" class="bg-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div class="text-center reveal">
+          <h2
+            class="text-3xl font-extrabold tracking-wide text-pink-200 sm:text-4xl"
+          >
+            HOW THE AUTOMATION WORKS
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-sm text-gray-300">
+            From repetitive manual tasks to connected automated workflows —
+            here's the simple shape behind most of what I build.
+          </p>
+        </div>
+
+        <div
+          class="mt-12 grid items-center gap-4 sm:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr]"
+        >
+          <div
+            class="rounded-xl bg-zinc-900 p-6 text-center shadow-lg reveal reveal-left"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              STEP 1
+            </p>
+            <p class="mt-2 font-bold text-white">Trigger</p>
+            <p class="mt-2 text-sm text-gray-300">
+              A new form entry, email, or event starts the workflow.
+            </p>
+          </div>
+
+          <div
+            class="hidden text-2xl text-pink-400 sm:block text-center"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 text-center shadow-lg reveal">
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              STEP 2
+            </p>
+            <p class="mt-2 font-bold text-white">AI / Logic</p>
+            <p class="mt-2 text-sm text-gray-300">
+              AI or conditional logic decides what should happen next.
+            </p>
+          </div>
+
+          <div
+            class="hidden text-2xl text-pink-400 sm:block text-center"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 text-center shadow-lg reveal">
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              STEP 3
+            </p>
+            <p class="mt-2 font-bold text-white">Data</p>
+            <p class="mt-2 text-sm text-gray-300">
+              Information is pulled from or sent to tools like Sheets, Drive, or
+              Gmail.
+            </p>
+          </div>
+
+          <div
+            class="hidden text-2xl text-pink-400 sm:block text-center"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+          <div
+            class="rounded-xl bg-zinc-900 p-6 text-center shadow-lg reveal reveal-right"
+          >
+            <p class="text-xs font-semibold tracking-[0.25em] text-pink-300">
+              STEP 4
+            </p>
+            <p class="mt-2 font-bold text-white">Action</p>
+            <p class="mt-2 text-sm text-gray-300">
+              A task is completed automatically — no manual follow-up needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools" class="bg-pink-100 text-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div class="text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-wide sm:text-4xl">
+            TOOLS I WORK WITH
+          </h2>
+          <p class="mt-2 text-sm text-black/70">
+            Tools I use regularly to build practical AI and automation solutions
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 reveal">
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >ChatGPT</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Claude</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Gemini</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >n8n</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Google Sheets</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Google Calendar</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Google Drive</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Gmail</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >HTML</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >CSS</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >JavaScript</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Git/GitHub</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Netlify</span
+          >
+          <span
+            class="rounded-full bg-black px-5 py-2 text-sm font-semibold text-white"
+            >Canva</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="bg-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div class="text-center reveal">
+          <h2
+            class="text-3xl font-extrabold tracking-wide text-pink-200 sm:text-4xl"
+          >
+            HOW I CAN HELP YOUR BUSINESS
+          </h2>
+          <p class="mt-2 text-sm text-gray-300">A simple, practical process</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-left">
+            <p class="text-2xl font-extrabold text-pink-300">01</p>
+            <p class="mt-2 font-bold text-white">Understand the problem</p>
+            <p class="mt-2 text-sm text-gray-300">
+              I start by learning how your business actually runs day to day.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal">
+            <p class="text-2xl font-extrabold text-pink-300">02</p>
+            <p class="mt-2 font-bold text-white">Identify repetitive tasks</p>
+            <p class="mt-2 text-sm text-gray-300">
+              We find the manual, repetitive work that's eating up your time.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right">
+            <p class="text-2xl font-extrabold text-pink-300">03</p>
+            <p class="mt-2 font-bold text-white">Design a practical solution</p>
+            <p class="mt-2 text-sm text-gray-300">
+              I map out a solution that fits your tools and your budget.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-left">
+            <p class="text-2xl font-extrabold text-pink-300">04</p>
+            <p class="mt-2 font-bold text-white">
+              Build and connect the workflow
+            </p>
+            <p class="mt-2 text-sm text-gray-300">
+              I build the automation, chatbot, or system and connect it to your
+              existing tools.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal">
+            <p class="text-2xl font-extrabold text-pink-300">05</p>
+            <p class="mt-2 font-bold text-white">Test and refine</p>
+            <p class="mt-2 text-sm text-gray-300">
+              Everything is tested and adjusted so it works reliably.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-zinc-900 p-6 shadow-lg reveal reveal-right">
+            <p class="text-2xl font-extrabold text-pink-300">06</p>
+            <p class="mt-2 font-bold text-white">Make it easy to use</p>
+            <p class="mt-2 text-sm text-gray-300">
+              I make sure the system is simple for you and your team to use
+              going forward.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO I WORK WITH -->
+    <section id="who" class="bg-pink-100 text-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div class="text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-wide sm:text-4xl">
+            WHO I WORK WITH
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-sm text-black/70">
+            I help businesses that want to use AI and automation practically,
+            without making things unnecessarily complicated.
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 reveal">
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Women Entrepreneurs</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Coaches</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Consultants</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Small Businesses</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Online Businesses</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Agencies</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Service-Based Businesses</span
+          >
+          <span
+            class="rounded-full bg-white px-5 py-2 text-sm font-semibold shadow"
+            >Growing Businesses</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL BACKGROUND -->
+    <section id="technical" class="bg-black">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div
+          class="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-zinc-900 p-6 shadow-xl sm:p-8 md:p-10 reveal"
+        >
+          <div class="text-center">
+            <h2
+              class="text-2xl font-extrabold tracking-wide text-pink-200 sm:text-3xl"
+            >
+              MY TECHNICAL BACKGROUND
+            </h2>
+          </div>
+          <p
+            class="mx-auto mt-4 max-w-2xl text-center text-sm leading-relaxed text-gray-300"
+          >
+            Alongside AI and automation, I also have frontend development
+            experience — HTML, CSS, JavaScript, responsive design, APIs,
+            Git/GitHub, landing pages, and websites. It's a supporting skill
+            within my broader AI and digital operations work, and it means I can
+            build the front-end piece of a project, not just the automation
+            behind it.
+          </p>
+
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >HTML</span
+            >
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >CSS</span
+            >
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >JavaScript</span
+            >
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >Responsive Design</span
+            >
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >APIs</span
+            >
+            <span
+              class="rounded-full bg-black px-5 py-2 text-xs font-semibold text-pink-200"
+              >Git/GitHub</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
     <section id="faqs" class="bg-pink-100 text-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-16">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-extrabold tracking-wide">FAQs</h2>
+          <h2 class="text-3xl font-extrabold tracking-wide sm:text-4xl">
+            FAQs
+          </h2>
           <p class="mt-4 text-sm text-black/70 max-w-2xl mx-auto">
             Quick answers to the questions people ask before getting started.
           </p>
         </div>
 
         <div class="mx-auto max-w-3xl space-y-4">
-          <!-- FAQ Item -->
           <details
             class="group rounded-2xl bg-white shadow-lg border border-black/5"
           >
@@ -336,132 +826,18 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/origina
               class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
             >
               <span class="text-sm md:text-base font-bold">
-                What exactly does PinGrowth Digital help with?
+                What kind of businesses do you work with?
               </span>
               <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
               >
                 +
               </span>
             </summary>
             <div class="px-6 pb-6 text-sm text-black/70">
-              I help creators and small businesses grow on Pinterest through
-              strategy, account optimization, Pinterest SEO, and landing pages
-              that turn Pinterest traffic into clicks and real results.
-            </div>
-          </details>
-
-          <!-- FAQ Item -->
-          <details
-            class="group rounded-2xl bg-white shadow-lg border border-black/5"
-          >
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
-            >
-              <span class="text-sm md:text-base font-bold">
-                Is this beginner-friendly even if I don’t know what to post?
-              </span>
-              <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-black/70">
-              Yes. You’ll get clear direction and content ideas based on your
-              niche, so you stop guessing and start posting with confidence.
-            </div>
-          </details>
-
-          <!-- FAQ Item -->
-          <details
-            class="group rounded-2xl bg-white shadow-lg border border-black/5"
-          >
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
-            >
-              <span class="text-sm md:text-base font-bold">
-                How long does it take to see results?
-              </span>
-              <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-black/70">
-              It depends on your niche and consistency, but many people start
-              seeing improvement within a few weeks once the strategy and
-              posting system is in place.
-            </div>
-          </details>
-
-          <!-- FAQ Item -->
-          <details
-            class="group rounded-2xl bg-white shadow-lg border border-black/5"
-          >
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
-            >
-              <span class="text-sm md:text-base font-bold">
-                Do you manage accounts or just offer strategy?
-              </span>
-              <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-black/70">
-              Both. You can choose strategy-only support or full management
-              depending on what you need right now.
-            </div>
-          </details>
-
-          <!-- FAQ Item -->
-
-          <!-- FAQ Item -->
-          <details
-            class="group rounded-2xl bg-white shadow-lg border border-black/5"
-          >
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
-            >
-              <span class="text-sm md:text-base font-bold">
-                Do I need a website for Pinterest?
-              </span>
-              <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-black/70">
-              Yes. Pinterest works best when your Pins lead somewhere. A simple
-              landing page helps turn Pinterest traffic into clicks, leads, and
-              real results instead of lost views.
-            </div>
-          </details>
-
-          <!-- FAQ Item -->
-          <details
-            class="group rounded-2xl bg-white shadow-lg border border-black/5"
-          >
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
-            >
-              <span class="text-sm md:text-base font-bold">
-                What if I don’t have a website yet?
-              </span>
-              <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-black/70">
-              That’s okay. I offer a Pinterest landing page setup designed
-              specifically to support Pinterest traffic and conversions.
+              I work with entrepreneurs, coaches, consultants, women-led
+              businesses, agencies, and other growing online businesses that
+              want to simplify how they operate.
             </div>
           </details>
 
@@ -472,18 +848,126 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/origina
               class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
             >
               <span class="text-sm md:text-base font-bold">
-                How do I get started?
+                What can you automate?
               </span>
               <span
-                class="grid h-8 w-8 place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
               >
                 +
               </span>
             </summary>
             <div class="px-6 pb-6 text-sm text-black/70">
-              Scroll to the pricing section and choose a package, or contact me
-              directly. I’ll ask a few questions and we’ll map out your next
-              steps.
+              Repetitive tasks like following up on emails, organizing
+              information across Google Sheets, Calendar, and Drive, and
+              connecting different tools so they work together automatically.
+            </div>
+          </details>
+
+          <details
+            class="group rounded-2xl bg-white shadow-lg border border-black/5"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
+            >
+              <span class="text-sm md:text-base font-bold">
+                Do I need technical knowledge to work with you?
+              </span>
+              <span
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-sm text-black/70">
+              No. I explain everything in plain business language and build
+              systems that are simple for you and your team to use.
+            </div>
+          </details>
+
+          <details
+            class="group rounded-2xl bg-white shadow-lg border border-black/5"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
+            >
+              <span class="text-sm md:text-base font-bold">
+                What tools do you use?
+              </span>
+              <span
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-sm text-black/70">
+              Mainly ChatGPT, Claude, Gemini, and n8n for automation, along with
+              Google Sheets, Calendar, Drive, and Gmail — plus HTML, CSS, and
+              JavaScript for websites and landing pages.
+            </div>
+          </details>
+
+          <details
+            class="group rounded-2xl bg-white shadow-lg border border-black/5"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
+            >
+              <span class="text-sm md:text-base font-bold">
+                Can you build an AI chatbot for my business?
+              </span>
+              <span
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-sm text-black/70">
+              Yes. I build AI-powered chatbots and assistants that answer
+              customer questions using your own business information.
+            </div>
+          </details>
+
+          <details
+            class="group rounded-2xl bg-white shadow-lg border border-black/5"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
+            >
+              <span class="text-sm md:text-base font-bold">
+                Can you automate tasks I currently do manually?
+              </span>
+              <span
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-sm text-black/70">
+              That's exactly what I focus on — finding the manual, repetitive
+              parts of your work and building a workflow that handles them for
+              you.
+            </div>
+          </details>
+
+          <details
+            class="group rounded-2xl bg-white shadow-lg border border-black/5"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5"
+            >
+              <span class="text-sm md:text-base font-bold">
+                Do you build websites too?
+              </span>
+              <span
+                class="grid h-8 w-8 flex-none place-items-center rounded-full bg-black text-white transition-transform duration-300 group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-sm text-black/70">
+              Yes. I build responsive business websites and landing pages using
+              HTML, CSS, and JavaScript, as a supporting part of my digital
+              operations work.
             </div>
           </details>
         </div>
@@ -499,215 +983,40 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/534/origina
       </div>
     </section>
 
-    <!-- SOCIAL MEDIA TIPS SECTION -->
-    <section id="tips" class="bg-pink-100 text-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
-        <!-- Section Heading -->
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-4xl font-extrabold tracking-wide">
-            Social Media Tips for Beginners
-          </h2>
-          <p class="mt-4 text-sm text-black/70 max-w-2xl mx-auto">
-            Simple, beginner-friendly tips to help you grow on Instagram,
-            TikTok, and Pinterest with clarity and confidence.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3">
-          <div class="rounded-2xl bg-white p-6 shadow-lg reveal reveal-left">
-            <h3 class="text-lg font-bold mb-2">Post with Intention</h3>
-            <p class="text-sm text-black/70">
-              Focus on one goal per post. Clear messaging helps your audience
-              understand and engage faster.
-            </p>
-          </div>
-
-          <div class="rounded-2xl bg-white p-6 shadow-lg reveal">
-            <h3 class="text-lg font-bold mb-2">Consistency Beats Perfection</h3>
-            <p class="text-sm text-black/70">
-              You don’t need perfect content. Showing up regularly builds trust
-              and visibility over time.
-            </p>
-          </div>
-
-          <div class="rounded-2xl bg-white p-6 shadow-lg reveal reveal-right">
-            <h3 class="text-lg font-bold mb-2">Grow One Platform First</h3>
-            <p class="text-sm text-black/70">
-              Start with one platform where your audience already is, then
-              expand once you’re confident.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center reveal">
-          <p class="text-sm text-black/70">
-            Want help applying these tips to your brand?
-          </p>
-          <a
-            href="#contact"
-            class="inline-block mt-4 rounded-full bg-black px-8 py-3 text-sm font-bold tracking-wide text-white hover:bg-zinc-900 pop"
-          >
-            Work With PinGrowth Digital
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="bg-pink-100 text-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
-        <div class="text-center reveal">
-          <h2 class="text-4xl font-extrabold tracking-wide">PRICING</h2>
-          <p class="mt-2 text-sm text-black/70">
-            Simple packages you can start with today
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <div
-            class="rounded-2xl border border-black/10 bg-black p-8 text-white shadow-xl reveal reveal-left"
-          >
-            <p class="text-xs font-semibold tracking-[0.25em] text-gray-300">
-              STARTER PACKAGE
-            </p>
-            <p class="mt-5 text-5xl font-extrabold text-pink-300">$250</p>
-            <ul class="mt-6 space-y-2 text-sm text-gray-200">
-              <li>✓Pinterest Growth audit</li>
-              <li>✓ Pinterest Content direction</li>
-              <li>✓ Pinterest 7-day action plan</li>
-              <li>✓ Pinterest Schedule post</li>
-              <br />
-              <li>➕ Pinterest Landing Page Setup $150 one-time (Optional)</li>
-            </ul>
-            <a
-              href="#contact"
-              class="mt-8 block rounded-full bg-pink-500 px-6 py-3 text-center font-bold hover:bg-pink-600 pop"
-            >
-              BOOK NOW
-            </a>
-          </div>
-
-          <div
-            class="rounded-2xl border border-black/10 bg-black p-8 text-white shadow-xl reveal"
-          >
-            <p class="text-xs font-semibold tracking-[0.25em] text-gray-300">
-              GROWTH PACKAGE
-            </p>
-            <p class="mt-5 text-5xl font-extrabold text-pink-300">$350</p>
-            <ul class="mt-6 space-y-2 text-sm text-gray-200">
-              <li>✓ Pinterest Strategy session</li>
-              <li>✓ Pinterest Content planner</li>
-              <li>✓ Pinterest 30-day growth plan</li>
-              <li>✓ Pinterest Schedule post</li>
-              <li>✓ Reporting</li>
-              <li>✓ Engagement with followers</li>
-              <br />
-              <li>➕ Pinterest Landing Page Setup $150 one-time (optional)</li>
-            </ul>
-            <a
-              href="#contact"
-              class="mt-8 block rounded-full bg-pink-500 px-6 py-3 text-center font-bold hover:bg-pink-600 pop"
-            >
-              BOOK NOW
-            </a>
-          </div>
-
-          <div
-            class="rounded-2xl border border-black/10 bg-black p-8 text-white shadow-xl reveal reveal-right"
-          >
-            <p class="text-xs font-semibold tracking-[0.25em] text-gray-300">
-              PREMIUM PACKAGE
-            </p>
-            <p class="mt-5 text-5xl font-extrabold text-pink-300">$550</p>
-            <ul class="mt-6 space-y-2 text-sm text-gray-200">
-              <li>✓Pinterest Full optimization</li>
-              <li>✓ Pinterest 30-day growth plan</li>
-              <li>✓ Pinterest Content strategy</li>
-              <li>✓ Pinterest Weekly check-ins</li>
-              <li>✓ Pinterest Schedule post</li>
-              <li>✓ Reporting</li>
-              <li>✓ Engagement with followers</li>
-              <br />
-              <li>➕ Pinterest Landing Page Setup $150 one-time (Included)</li>
-            </ul>
-            <a
-              href="#contact"
-              class="mt-8 block rounded-full bg-pink-500 px-6 py-3 text-center font-bold hover:bg-pink-600 pop"
-            >
-              BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIAL -->
-    <section id="testimonial" class="bg-black">
-      <div class="mx-auto max-w-6xl px-5 py-16">
-        <div class="grid gap-10 md:grid-cols-2 md:items-center">
-          <div class="reveal reveal-left">
-            <h2 class="text-4xl font-extrabold text-pink-200">
-              Real Growth Feels Different
-            </h2>
-            <p class="mt-4 text-gray-300">
-              No stress. No guessing. Just a clear plan and content that
-              connects. If you’re ready to stop being inconsistent and start
-              growing, let’s do this together.
-            </p>
-
-            <div
-              class="mt-7 rounded-2xl border border-white/10 bg-zinc-900 p-6"
-            >
-              <p class="text-sm text-gray-200">
-                “I finally understood what to post and how to keep going. My
-                engagement improved and I felt confident again.”
-              </p>
-              <p class="mt-3 text-xs font-bold tracking-[0.25em] text-pink-200">
-                PIN GROWTH CLIENT
-              </p>
-            </div>
-          </div>
-
-          <div class="reveal reveal-right">
-            <div
-              class="overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
-            >
-              <img
-                src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/532/original/Dammy-img2.jpg?1768945693"
-                alt="PinGrowth Digital"
-                class="h-[420px] w-full object-cover md:h-[520px]"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="bg-pink-200 text-black">
-      <div class="mx-auto max-w-6xl px-5 py-16 text-center reveal">
-        <h2 class="text-4xl font-extrabold">Share Your Vision</h2>
+      <div class="mx-auto max-w-6xl px-5 py-14 text-center sm:py-16 reveal">
+        <h2 class="text-3xl font-extrabold sm:text-4xl">
+          Let's Make Your Business Work Smarter
+        </h2>
         <p class="mx-auto mt-4 max-w-2xl text-sm text-black/70">
-          Tell me your goals and I’ll help you map out the next steps to grow
-          your social media with clarity and consistency.
+          If you have repetitive tasks, disconnected tools, or you're curious
+          about practical ways to use AI in your business, I'd love to hear from
+          you.
         </p>
 
-        <div
-          class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row"
-        >
+        <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="https://calendly.com/pingrowthdigital/let-s-talk-automation"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-black px-8 py-3 text-sm font-bold tracking-wide text-white hover:bg-zinc-900 pop"
+          >
+            BOOK A CALL
+          </a>
+
           <a
             href="mailto:pingrowthdigital@gmail.com"
-            class="rounded-full bg-black px-8 py-3 text-sm font-bold tracking-wide text-white hover:bg-zinc-900 pop"
+            class="rounded-full border border-black/30 px-8 py-3 text-sm font-bold tracking-wide hover:border-black/60 pop"
           >
             EMAIL ME
           </a>
 
           <a
-            href="#pricing"
+            href="#portfolio"
             class="rounded-full border border-black/30 px-8 py-3 text-sm font-bold tracking-wide hover:border-black/60 pop"
           >
-            VIEW PACKAGES
+            VIEW MY WORK
           </a>
         </div>
       </div>
@@ -719,13 +1028,13 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/532/origina
         <div class="grid gap-8 md:grid-cols-3">
           <div class="reveal reveal-left">
             <p class="text-lg font-extrabold">
-              <span class="text-white">PinGrowth</span
-              ><span class="text-pink-400">Digital</span>
+              <span class="text-white">Dammy</span
+              ><span class="text-pink-400"> Oseyemi</span>
             </p>
             <p class="mt-3 text-sm text-gray-300">
-              Data-driven Pinterest strategies, optimized Pins, and consistent
-              content that helps your business get seen long-term — without
-              daily posting stress.
+              AI-Powered Digital Operations Specialist — helping businesses
+              simplify repetitive work with AI, automation, and practical
+              digital systems.
             </p>
           </div>
 
@@ -739,7 +1048,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/532/origina
                 <a class="hover:text-pink-300" href="#services">Services</a>
               </li>
               <li>
-                <a class="hover:text-pink-300" href="#pricing">Pricing</a>
+                <a class="hover:text-pink-300" href="#portfolio">Portfolio</a>
               </li>
               <li>
                 <a class="hover:text-pink-300" href="#contact">Contact</a>
@@ -751,31 +1060,29 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/532/origina
             <p class="text-sm font-bold tracking-[0.25em] text-gray-200">
               CONTACT
             </p>
-            <p class="mt-4 text-sm text-gray-300">
+            <p class="mt-4 text-sm">
               <a
                 href="mailto:pingrowthdigital@gmail.com"
-                class="rounded-full bg-black text-sm font-bold tracking-wide text-white hover:bg-zinc-900 pop"
+                class="text-sm font-bold tracking-wide text-gray-300 hover:text-pink-300"
               >
-                Email: hello@pingrowthdigital.com
+                pingrowthdigital@gmail.com
               </a>
             </p>
-            <p class="mt-2 text-sm text-gray-300">Location: Online</p>
 
-            <div class="mt-5 flex gap-3">
+            <div class="mt-5 flex flex-wrap gap-3">
               <a
-                href="https://www.pinterest.com/PinGrowthDigital/"
+                href="https://www.linkedin.com/in/damilola-oseyemi/"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="rounded-full bg-zinc-900 px-4 py-2 text-xs font-bold text-gray-200 hover:text-pink-200"
-                >Pinterest</a
+                >LinkedIn</a
               >
               <a
-                href="https://www.instagram.com/pingrowthdigital/"
+                href="https://calendly.com/pingrowthdigital/let-s-talk-automation"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="rounded-full bg-zinc-900 px-4 py-2 text-xs font-bold text-gray-200 hover:text-pink-200"
-                >Instagram</a
-              >
-              <a
-                href="#"
-                class="rounded-full bg-zinc-900 px-4 py-2 text-xs font-bold text-gray-200 hover:text-pink-200"
-                >TikTok</a
+                >Book a Call</a
               >
             </div>
           </div>
@@ -784,7 +1091,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/532/origina
         <div
           class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-gray-400"
         >
-          © <span id="year"></span> PinGrowth Digital. All rights reserved.
+          © <span id="year"></span> Dammy Oseyemi. All rights reserved.
         </div>
       </div>
     </footer>
